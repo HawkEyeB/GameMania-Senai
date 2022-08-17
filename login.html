@@ -20,50 +20,54 @@
             <img class="logotipo" src="./images/Logo.svg">
 
             <div class="search">
-                <input class="search-bar" type="search">
+                <input class="search-bar" id="busca-bar" type="search" placeholder="Busque aqui">
                 <button class="search-button" type="submit">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
 
             <nav class="menu">
-                <a href="#" class="item-especial"><img src="./images/Login.svg">
-                    <p class="login">Logue-se ou <br>
-                        Cadastre <br>
-                        Aqui. </p>
+                <div>
+                    <div class="login-img">
+                        <img src="./images/Login.svg">
+                    </div>
+                    <p class="login"> <a href="">Logue-se</a> ou
+                        Cadastre <a href="">Aqui.</a> </p>
+                </div>
+                <a href="#"><img class="nav-img" src="./images/SAC.svg"></a>
+                <a href="#"><img class="nav-img" src="./images/Shopping.svg">
                 </a>
-                <a href="#"><img src="./images/SAC.svg"></a>
-                <a href="#"><img src="./images/Shopping.svg">
-                </a>
+                <img class="hamburguer" onclick="exibeMenu()" src="./images/6499731.png">
             </nav>
+        </div>
         </div>
     </header>
 
     <!-- COMEÇO BARRA DE CATEGORIAS -->
     <section class="category">
         <div class="container-grid category-box">
-            <nav class="color-category">
-                <table class="navbar-table">
-                    <tr>
-                        <th> <a href="#" class="link-special"> <i class="fa-solid fa-briefcase fa-3x icons">
-                                </i>
-                                <p class="category-description"> Todos os Departamentos</p>
-                            </a> </th>
-                        <th> <a href="#" class="category-link"> <i class="fa-solid fa-computer fa-3x">
-                                </i>
-                                <p class="category-description"> Pc Gamer</p>
-                            </a></th>
-                        <th> <a href="#" class="category-link"><i class="fa-solid fa-laptop fa-3x"></i>
-                                <p class="category-description"> Notebooks</p>
-                            </a></th>
-                        <th> <a href="#" class="category-link"><i class="fa-solid fa-mobile-screen-button fa-3x"></i>
-                                <p class="category-description"> Celulares</p>
-                            </a></th>
-                        <th> <a href="#" class="category-link"> <i class="fa-solid fa-keyboard fa-3x"></i>
-                                <p class="category-description"> Perifericos</p>
-                            </a></th>
-                    </tr>
-                </table>
+            <nav id="men" class="color-category">
+                <div>
+
+                    <a href="#" class="link-special"> <i class="fa-solid fa-briefcase fa-3x icons">
+                        </i>
+                        <p class="category-description"> Todos os Departamentos</p>
+                    </a>
+                    <a href="#" class="category-link"> <i class="fa-solid fa-computer fa-3x">
+                        </i>
+                        <p class="category-description"> Pc Gamer</p>
+                    </a>
+                    <a href="#" class="category-link"><i class="fa-solid fa-laptop fa-3x"></i>
+                        <p class="category-description"> Notebooks</p>
+                    </a>
+                    <a href="#" class="category-link"><i class="fa-solid fa-mobile-screen-button fa-3x"></i>
+                        <p class="category-description"> Celulares</p>
+                    </a>
+                    <a href="#" class="category-link"> <i class="fa-solid fa-keyboard fa-3x"></i>
+                        <p class="category-description"> Perifericos</p>
+                    </a>
+                </div>
+
             </nav>
         </div>
     </section>
@@ -131,6 +135,96 @@
             </div>
         </div>
     </main>
+    <!-- COMEÇO DO RODAPÉ -->
+    <footer>
+        <section class="container-grid rodape">
+            <div class="rodape-box">
+                <div class="box departamento">
+                    <ul class="rodape-list">
+                        <li class="rodape-titulo">departamento</li>
+                        <li><a class="rodape-text" href="#">Pc Gamer</a></li>
+                        <li><a class="rodape-text" href="#">Notebooks</a></li>
+                        <li><a class="rodape-text" href="#">Celulares</a></li>
+                        <li><a class="rodape-text" href="#">Perifericos</a></li>
+                    </ul>
+                </div>
+
+                <div class="box institucional">
+                    <ul class="rodape-list">
+                        <li class="rodape-titulo">institucional</li>
+                        <li><a class="rodape-text" href="#">Quem Somos</a></li>
+                        <li><a class="rodape-text" href="#">Dúvidas </a></li>
+                        <li><a class="rodape-text" href="#">Trocas e devoluções</a></li>
+                        <li><a class="rodape-text" href="#">Privacidade</a></li>
+                        <li><a class="rodape-text" href="#">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="box conta">
+                    <ul class="rodape-list">
+                        <li class="rodape-titulo">conta</li>
+                        <li><a class="rodape-text" href="#">Login</a></li>
+                        <li><a class="rodape-text" href="#">Perda de Senha</a></li>
+                        <li><a class="rodape-text" href="#">Cadastro</a></li>
+                    </ul>
+
+                </div>
+                <div class="box atendimento">
+                    <ul class="rodape-list">
+                        <li>
+                        <li class="rodape-titulo">atendimento</li>
+                        <li>
+                            <p>
+                                Horário de atendimento:
+                                08:00 às 20:00 -
+                                Segunda a Sábado,
+                                horário de Brasília
+
+                        </li>
+                        <li>
+                            <p>
+
+                                Endereço:
+                                Rua Carlos Gomes, 1021 -
+                                9° andar - Centro
+                                Limeira/SP - CEP: 13420-010
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                E-mail:
+                                faleconosco@GameMania.com.br
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box rede-social">
+                    <ul class="rodape-social">
+                        <li class="rodape-titulo">rede social</li>
+                        <li>
+                            <a href="#" class="rodape-link"><i class="fa-brands fa-whatsapp fa-3x"></i>
+                                <p class="rodape-description"> (11) 99942-7586 </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="rodape-link"> <i class="fa-brands fa-facebook fa-3x"></i>
+                                <p class="rodape-description"> gamemania.com </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="rodape-link"> <i class="fa-brands fa-instagram fa-3x"></i>
+                                <p class="rodape-description"> @gamemania</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./javascript/login.js"></script>
