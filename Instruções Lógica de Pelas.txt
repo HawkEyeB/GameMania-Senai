@@ -1,0 +1,10 @@
+Cadastrar peça
+*Nome da Peça
+-Estrutura de decisão (Tem mais de 3 caracteres ou não?)
+*Peso da peça
+-Estrutura de decisão (Peça superior a 100g?)
+*Quantidade de peças por caixa
+-Estrutura de decisão ( A caixa tem até 10 peças?)
+
+Uma forma boa seria ter dois arrays um com os nomes da peça e outro com o peso. No final calcular os peços dentro do array.
+Deveria haver inserção e a cada inserção de nome, checar a primeira condição e depois a terceira condição.
